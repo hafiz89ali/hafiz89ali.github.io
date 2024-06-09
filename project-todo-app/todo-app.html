@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Apps</title>
+    <link rel="stylesheet" href="todo-app.css" />
+    <script src="todo-app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Task To Do</h1>
+      <!-- form element -->
+      <form id="taskForm">
+        <!-- form component comprise of inputs and submit button -->
+        <input type="text" id="task" placeholder="Insert task here" />
+        <input type="text" id="person" placeholder="To whom" />
+        <button type="submit">Add</button>
+      </form>
+      <ol id="taskList">
+        <li>
+          <input type="checkbox" />
+          Read MDN web docs - loop
+          <button class="delete">Delete</button>
+        </li>
+        <li>
+          Review function and if else statement
+          <button class="delete">Delete</button>
+        </li>
+        <li>
+          Buy curry powder and santan for mom
+          <button class="delete">Delete</button>
+        </li>
+        <li>
+          Eat medicine
+          <button class="delete">Delete</button>
+        </li>
+        <!-- insert new task here -->
+      </ol>
+    </main>
+  </body>
+</html>

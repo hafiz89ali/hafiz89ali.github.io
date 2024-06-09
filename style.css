@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #051650;
+  background-image: url("./assets/background-image-freepik-5172658.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 12px;
+}
+
+h1 {
+  all: unset;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  all: unset;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#line {
+  height: 5px;
+  background-color: white;
+}
+
+/* SECTION SPECIFIC PROPERTIES */
+
+section#section1 > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+section#section1 > nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Hide hamburger menu on desktop view */
+section#section1 > nav > img#mobileNav {
+  display: none;
+}
+
+section#section1 > div#hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 50px 0;
+}
+
+section#section1 > div#hero > div.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+
+section#section1 > div#hero > div.content > div.wording {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0px;
+}
+
+section#section1 > div#hero > div.content > div.icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  align-content: center;
+  gap: 50px;
+}
+
+section#section1 > nav > div#mobileNavElements {
+  display: none;
+  background-color: #092854;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+}
+
+section#section1 > nav > div#mobileNavElements > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 2px solid white;
+}
+
+section#section1 > nav > div#mobileNavElements > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin-top: 16px;
+}
+
+section#section1 > div#hero > div.image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SECTION 2 (ABOUT) STYLING*/
+
+section#section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#section2 > div > h2 {
+  text-align: center;
+  color: red;
+}
+
+/* SECTION 3 (EXPERIENCES) STYLING */
+
+section#section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#section3 > div > h2 {
+  text-align: center;
+  color: red;
+}
+
+#experience {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* padding: 50px 0; */
+  text-align: center;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#experience > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+  gap: 20px;
+}
+
+/* SECTION 4 (SKILLS) STYLING */
+
+section#section4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#section4 > div.title > h2 {
+  text-align: center;
+  color: red;
+}
+
+section#section4 > div.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  padding: 0px 0;
+  text-align: center;
+}
+
+section#section4 > div.skills > div#skillsCol {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+div#skillText {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: center;
+  line-height: 1.5;
+}
+
+div#skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0;
+  text-align: center;
+}
+
+/* SECTION 5 (PROJECTS) STYLING */
+
+section#section5 {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#section5 > div > h2 {
+  text-align: center;
+  color: red;
+}
+
+section#section5 > div#projects > div > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  text-align: center;
+}
+
+#projectCover {
+  width: 320px;
+  height: 320px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+/* SECTION 6 (CONTACT) STYLING */
+
+section#section6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+section#section6 > div > h2 {
+  text-align: center;
+  color: red;
+}
+
+section#section6 > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+section#section6 > form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+section#section6 > form > input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 8px;
+  outline: none;
+}
+
+section#section6 > form > input.message {
+  height: 100px;
+}
+
+section#section6 > form > button {
+  width: fit-content;
+  height: 20px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+/* SECTION 7 (FOOTER) STYLING */
+
+section#section7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#section7 > div.icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1100px) {
+  section {
+    max-width: 100%;
+    min-height: fit-content;
+    margin: 0 5%;
+  }
+
+  section#section1 > nav > div {
+    display: none;
+  }
+
+  section#section1 > nav > img#mobileNav {
+    display: block;
+  }
+
+  section#section1 > div#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  section#section1 > div#hero > div.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  section#section1 > div#hero > div.content > div.wording {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  section#section1 > div#hero > div.content > div.icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+  }
+
+  /* SECTION 2 (ABOUT) MOBILE STYLING*/
+  section#section2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 50px;
+  }
+
+  /* SECTION 3 (EXPERIENCES) MOBILE STYLING*/
+  section#section3 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 50px;
+  }
+
+  #experience > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  section#section4 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  section#section4 > div.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+    text-align: center;
+    gap: 20px;
+  }
+
+  section#section4 > div.skills > div#skillsCol {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  section#section5 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  div#projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  section#section7 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
